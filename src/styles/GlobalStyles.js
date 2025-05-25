@@ -1,3 +1,6 @@
+import { createGlobalStyle } from 'styled-components';
+
+export const GlobalStyles = createGlobalStyle`
 *,
 *::after,
 *::before {
@@ -26,5 +29,9 @@ nav ul {
 
 body {
   margin: 0;
-  font-family: sans-serif;
+font-family: "Mouse Memoirs", sans-serif;
+  background-image: url(/assets/images/background-mobile.svg);
+  background-size: cover;
+  color:#fff ;
 }
+`;

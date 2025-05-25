@@ -1,5 +1,17 @@
+import { BrowserRouter } from 'react-router-dom';
+import GameManager from './lib/providers/GameManager.provider';
+import Router from './lib/router/Router';
+import { GlobalStyles } from './styles/GlobalStyles';
+
 const App = () => {
-  return <h1>React</h1>;
+  return (
+    <BrowserRouter>
+      <GlobalStyles />
+      <GameManager>
+        <Router />
+      </GameManager>
+    </BrowserRouter>
+  );
 };
 
 export default App;
